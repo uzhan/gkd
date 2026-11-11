@@ -54,6 +54,7 @@ import li.gkd.app.ui.navigation.SubsCategoryGroupRoute
 import li.gkd.app.ui.navigation.SubsCategoryRoute
 import li.gkd.app.ui.navigation.SubsGlobalGroupExcludeRoute
 import li.gkd.app.ui.navigation.SubsGlobalGroupListRoute
+import li.gkd.app.ui.navigation.SensorGuardTestRoute
 import li.gkd.app.ui.navigation.TouchOptimizationRoute
 import li.gkd.app.ui.navigation.UpsertRuleGroupRoute
 import li.gkd.app.ui.navigation.WebViewRoute
@@ -291,6 +292,7 @@ private val desktopRoutes by lazy {
         "debug-settings" to DebugSettingsRoute,
         "keep-alive" to KeepAliveRoute,
         "touch-optimization" to TouchOptimizationRoute,
+        "sensor-guard-test" to SensorGuardTestRoute,
         "matching-debug" to MatchDebugRoute,
         "crash-reports" to CrashReportRoute,
         "activity-log" to ActivityLogRoute,

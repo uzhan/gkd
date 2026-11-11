@@ -1211,4 +1211,18 @@
     <string name="companion_paused_apps_title">Pause companion</string>
     <string name="companion_paused_apps_description">In automation mode, pause companion accessibility in the selected apps to avoid accessibility detection notices caused by the companion service</string>
     <string name="companion_help_description">Companion accessibility helps automation work in some apps and helps keep GKD running in the background. GKD starts and stops it automatically.\n\nIt is a specially configured lightweight accessibility service with negligible overhead in everyday use.\n\nIn automation mode, if an app detects accessibility, select it under Pause companion. The companion service pauses when you enter that app and resumes when you leave.</string>
+    <string name="sensor_guard_test_entry">Experimental: SensorGuard (test)</string>
+    <string name="sensor_guard_test_title">SensorGuard test</string>
+    <string name="sensor_guard_test_section">Experimental</string>
+    <string name="sensor_guard_test_description">Temporarily freezes system sensors for 5 seconds via the privileged service (dumpsys sensorservice). After tapping freeze, switch to Sensor Box — values should stop updating, then the privilege process auto-enables after about 5 seconds (UserService version=10; you do not need to stay in GKD).\n\nLeaving this test page, or tapping Restore now, restores immediately.\n\nAfter upgrading this build, you must reconnect or restart the privileged / Shizuku service so the new UserService takes effect.</string>
+    <string name="sensor_guard_test_actions">Actions</string>
+    <string name="sensor_guard_test_freeze_5s">Freeze 5 seconds then restore</string>
+    <string name="sensor_guard_test_restore_now">Restore sensors now</string>
+    <string name="sensor_guard_test_remaining">Frozen · %1$s s left</string>
+    <string name="sensor_guard_test_freezing">Freezing…</string>
+    <string name="sensor_guard_test_need_privilege">Privileged service required</string>
+    <string name="sensor_guard_test_freeze_failed">Freeze failed</string>
+    <string name="sensor_guard_test_frozen">Sensors frozen</string>
+    <string name="sensor_guard_test_restored">Sensors restored</string>
+    <string name="sensor_guard_test_restore_failed">Restore failed</string>
 </resources>

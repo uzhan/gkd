@@ -84,6 +84,14 @@ private constructor(
             listener,
         )
 
+    fun sensorRestrict(pkg: String, autoRestoreMs: Long): Boolean =
+        userService.sensorRestrict(pkg, autoRestoreMs)
+
+    fun sensorEnable(): Boolean = userService.sensorEnable()
+
+    fun sensorCalibrate(pkg: String, durationSec: Int): String =
+        userService.sensorCalibrate(pkg, durationSec)
+
     fun observeSystemSurface() {
         if (android.os.Build.VERSION.SDK_INT < 34) return
         check(surfaceJob == null)

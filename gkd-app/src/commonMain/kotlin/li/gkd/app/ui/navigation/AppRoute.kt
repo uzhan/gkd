@@ -97,6 +97,8 @@ data class ActionLogRoute(
 
 @Serializable data object QuickSettingsTilesRoute : AppRoute
 
+@Serializable data object SensorGuardTestRoute : AppRoute
+
 @Serializable data object WorkModeRoute : AppRoute
 
 @Serializable data object SnapshotPageRoute : AppRoute

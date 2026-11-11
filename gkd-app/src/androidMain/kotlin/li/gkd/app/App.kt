@@ -50,6 +50,7 @@ import li.gkd.app.priv.PrivilegeOwnerLifecycle
 import li.gkd.app.priv.gkdPrivilegeUiConfig
 import li.gkd.app.priv.initPrivilege
 import li.gkd.app.priv.requestPrivilegeRecovery
+import li.gkd.app.sensorguard.SensorGuard
 import li.gkd.app.service.clearDebugSubscription
 import li.gkd.app.settings.syncSystemLanguage
 import li.gkd.app.snapshot.initVolumeSnapshotTrigger
@@ -278,6 +279,7 @@ class App : Application() {
         initVolumeSnapshotTrigger()
         initScreenEvents()
         initPrivilege()
+        SensorGuard.start()
         appScope.launchLogged(Dispatchers.IO) {
             PrivilegeUi.prepareExternalShellScript(gkdPrivilegeUiConfig.manualShellScriptPath)
         }

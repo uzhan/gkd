@@ -64,4 +64,37 @@ class UserService : IUserService.Stub() {
                 e.stackTraceToString().take(MAX_SCREENSHOT_ERROR_LENGTH),
             )
         }
+
+    override fun sensorRestrict(pkg: String, autoRestoreMs: Long): Boolean =
+        try {
+            SensorServiceCommands.restrict(pkg, autoRestoreMs)
+        } catch (e: VirtualMachineError) {
+            throw e
+        } catch (e: ThreadDeath) {
+            throw e
+        } catch (e: Throwable) {
+            false
+        }
+
+    override fun sensorEnable(): Boolean =
+        try {
+            SensorServiceCommands.enable()
+        } catch (e: VirtualMachineError) {
+            throw e
+        } catch (e: ThreadDeath) {
+            throw e
+        } catch (e: Throwable) {
+            false
+        }
+
+    override fun sensorCalibrate(pkg: String, durationSec: Int): String =
+        try {
+            SensorServiceCommands.calibrate(pkg, durationSec)
+        } catch (e: VirtualMachineError) {
+            throw e
+        } catch (e: ThreadDeath) {
+            throw e
+        } catch (e: Throwable) {
+            "error: ${e.javaClass.simpleName}: ${e.message}"
+        }
 }

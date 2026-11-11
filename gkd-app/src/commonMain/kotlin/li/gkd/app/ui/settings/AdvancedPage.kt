@@ -45,6 +45,7 @@ import li.gkd.app.ui.navigation.AppNavEntry
 import li.gkd.app.ui.navigation.DebugSettingsRoute
 import li.gkd.app.ui.navigation.ExternalCallsRoute
 import li.gkd.app.ui.navigation.QuickSettingsTilesRoute
+import li.gkd.app.ui.navigation.SensorGuardTestRoute
 import li.gkd.app.ui.navigation.SnapshotPageRoute
 import li.gkd.app.ui.navigation.SnapshotSettingsRoute
 import li.gkd.app.ui.platform.LocalUiHost
@@ -188,6 +189,10 @@ fun AdvancedPage(
             GkSettingItem(
                 title = stringResource(Res.string.external_calls_title),
                 onClick = { mainVm.navigator.navigate(ExternalCallsRoute) },
+            )
+            GkSettingItem(
+                title = stringResource(Res.string.sensor_guard_test_entry),
+                onClick = { mainVm.navigator.navigate(SensorGuardTestRoute) },
             )
             AdvancedSectionTitle(stringResource(Res.string.advanced_upload_share))
             GkSettingItem(

@@ -21,6 +21,7 @@ import li.gkd.app.ui.settings.DebugSettingsPage
 import li.gkd.app.ui.settings.ExternalCallsPage
 import li.gkd.app.ui.settings.InterfaceSettingsPage
 import li.gkd.app.ui.settings.KeepAlivePage
+import li.gkd.app.sensorguard.SensorGuardTestPage
 import li.gkd.app.ui.settings.QuickSettingsTilesPage
 import li.gkd.app.ui.settings.ServiceScopeAppListPage
 import li.gkd.app.ui.settings.ServiceScopeKind
@@ -88,6 +89,7 @@ fun GkAppNavigation() {
                 MatchDebugRoute -> MatchDebugPage()
                 ExternalCallsRoute -> ExternalCallsPage()
                 QuickSettingsTilesRoute -> QuickSettingsTilesPage()
+                SensorGuardTestRoute -> SensorGuardTestPage()
                 PrivilegeServiceRoute -> PrivilegeServicePage()
                 SnapshotSettingsRoute -> SnapshotSettingsPage(entry)
                 CrashReportRoute -> CrashReportPage()

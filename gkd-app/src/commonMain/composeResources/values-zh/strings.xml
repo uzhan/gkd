@@ -1205,4 +1205,18 @@
     <string name="companion_paused_apps_title">暂停伴生</string>
     <string name="companion_paused_apps_description">自动化模式下，进入勾选的应用时暂停伴生无障碍，可避免因伴生服务触发的无障碍检测提示</string>
     <string name="companion_help_description">伴生无障碍帮助自动化在部分应用中正常运行，也有助于 GKD 在后台持续运行。GKD 会自动启停它\n\n它是特殊配置的轻量无障碍服务，日常运行开销可忽略不计\n\n自动化模式下，如果某个应用提示已开启无障碍，可以在「暂停伴生」中勾选它。进入该应用时暂停伴生，离开后恢复</string>
+    <string name="sensor_guard_test_entry">实验性：传感器防误触（测试）</string>
+    <string name="sensor_guard_test_title">传感器防误触（测试）</string>
+    <string name="sensor_guard_test_section">实验性</string>
+    <string name="sensor_guard_test_description">通过特权服务临时冻结系统传感器 5 秒（dumpsys sensorservice）。点冻结后可立刻切到 Sensor Box 观察——数值应停住，约 5 秒后由特权进程自动恢复（不必留在 GKD；本机构建 UserService version=10）。\n\n离开本测试页，或点「立即恢复」，会马上恢复。\n\n升级本构建后，必须重新连接或重启特权 / Shizuku，新的 UserService 才会生效。</string>
+    <string name="sensor_guard_test_actions">操作</string>
+    <string name="sensor_guard_test_freeze_5s">冻结 5 秒后自动恢复</string>
+    <string name="sensor_guard_test_restore_now">立即恢复传感器</string>
+    <string name="sensor_guard_test_remaining">冻结中 · 剩余 %1$s 秒</string>
+    <string name="sensor_guard_test_freezing">正在冻结…</string>
+    <string name="sensor_guard_test_need_privilege">需要特权服务</string>
+    <string name="sensor_guard_test_freeze_failed">冻结失败</string>
+    <string name="sensor_guard_test_frozen">传感器已冻结</string>
+    <string name="sensor_guard_test_restored">传感器已恢复</string>
+    <string name="sensor_guard_test_restore_failed">恢复失败</string>
 </resources>
